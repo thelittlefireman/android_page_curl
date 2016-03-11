@@ -25,6 +25,9 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import fi.harism.curl.OpenGlUtils.MultisampleConfigChooser;
+
+
 /**
  * OpenGL ES View.
  * 
@@ -127,7 +130,7 @@ public class CurlView extends GLSurfaceView implements View.OnTouchListener,
 	private void init(Context ctx) {
 		mRenderer = new CurlRenderer(this);
 		setEGLContextClientVersion(2);
-		setEGLConfigChooser(new MultiSampleConfigChooser());
+		setEGLConfigChooser(new MultisampleConfigChooser());
 		setRenderer(mRenderer);
 		setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
 		setOnTouchListener(this);

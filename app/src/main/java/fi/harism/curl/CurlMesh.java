@@ -16,14 +16,14 @@
 
 package fi.harism.curl;
 
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-import java.nio.FloatBuffer;
-
 import android.graphics.PointF;
 import android.graphics.RectF;
 import android.opengl.GLES20;
 import android.opengl.GLUtils;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.FloatBuffer;
 
 /**
  * Class implementing actual curl/page rendering.
